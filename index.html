@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Todo List</h1>
+        <form id ="task-form">
+            <input 
+            type="text" id="task-input"
+            placeholder="Add a new task please.">
+            <input type="submit" 
+            id="submit-task"
+            value="Add task">
+        </form>
+    </header>
+
+    <main>
+        <section id="list-of-task">
+            <h2>Task</h2>
+<div id="task-counter">Total: 0 | Completed: 0</div>
+<div id="celebration" style="display: none; text-align: center; font-size: 2em; margin-top: 20px;">
+  🎉 Congratulations! All tasks completed! 🎉
+</div>
+
+
+            
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

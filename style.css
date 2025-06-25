@@ -1,0 +1,169 @@
+:root{
+    --green: #0C3B2E;
+    --yellow: #FFBA00;
+    --light-green: #6D9773;
+    --brown: #BB8A52;
+    --light: #EEE;
+    --gray: #6B7280;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Fira sans', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--green);
+    color: var(--light);
+}
+
+header{
+    padding: 32px 16px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+header h1{
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--yellow);
+    margin-bottom: 16px;
+}
+#task-form{
+    display: flex;
+}
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#task-input{
+    flex: 1 1 0%;
+    background-color: var(--light-green);
+    padding: 16px;
+    border-radius: 20px;
+    margin-left: 1rem;
+    color: var(--green);
+    font-size:large;
+}
+
+#task-input::placeholder{
+    color:var(--gray);
+    font-style: italic;
+    font-weight: 800;
+}
+
+#submit-task{
+    color: var(--green);
+    font-size: 24px;
+    font-weight: 700;
+    background: var(--yellow);
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 30px;
+    margin-left: 10px;
+    padding: 20px;
+}
+#submit-task:hover{
+    opacity: 0.4;
+}
+#submit-task:active{
+    opacity: 0.6;
+}
+
+main{
+     padding: 32px 16px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.list-of-task{
+    padding:16px;
+}
+.list-of-task, h2{
+   font-size: 40px;
+    font-weight: 300;
+    color: var(--yellow);
+    margin-bottom: 16px; 
+}
+
+ .task{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.content{
+    flex: 1 1 0%;
+    background-color: var(--light-green);
+    padding: 16px;
+    border-radius: 20px;
+    margin-left: 1rem;
+  
+}
+
+.action{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.edit,.delete,.done{
+     color: var(--green);
+    font-size: 24px;
+    font-weight: 700;
+    background: var(--yellow);
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 30px;
+    margin-left: 10px;
+    padding: 20px;
+   
+}
+.text{
+      color: var(--light);
+    font-size:32px;
+    font-weight: bolder;
+    overflow-wrap: break-word;
+}
+
+button:hover{
+    opacity: 0.4;
+}
+button:active{
+    opacity: 0.6;
+}
+
+
+ .completed {
+    text-decoration: line-through;
+    background-color:var(--light);
+    color:var(--gray);
+  }
+
+  #celebration {
+    animation: pop 1s ease-out;
+    display: none;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 20px;
+  }
+
+  @keyframes pop {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  #task-counter {
+    font-size: 24px;
+    color: var(--yellow);
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
