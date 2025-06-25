@@ -4,7 +4,7 @@ A simple and responsive to-do list web application built with **HTML**, **CSS**,
 
 ## 🔗 Live Demo
 
-[Click here to view the live demo]()
+[Click here to view the live demo](https://chinanu-tech.github.io/Todo-list-app/)
 
 
 
@@ -14,7 +14,8 @@ A simple and responsive to-do list web application built with **HTML**, **CSS**,
 - ❌ Delete tasks
 - ✏️ Mark tasks as complete
 - 💻 Fully responsive design for both desktop and mobile
-- 💾 Stores tasks locally using browser's `localStorage`
+- 💾 Stores tasks locally using browser's localStorage
+- - 🎊 Confetti animation triggers when **all tasks are completed**
 
 ## 🛠️ Built With
 
